@@ -1,0 +1,23 @@
+.decx {
+    font-size: xx-large;
+    margin: 50px;
+    background-color: #ff1361;
+    border-radius: 20px;
+}
+
+.conx {
+    border-radius: 10px;
+    background-color: rgb(14, 157, 240);
+}
+
+.btnConx {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.bar {
+    width: 250px;
+    height: 20px;
+    font-size: 20px;
+}

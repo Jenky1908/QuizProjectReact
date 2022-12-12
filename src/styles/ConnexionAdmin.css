@@ -1,0 +1,13 @@
+.btnCA {
+    display: flex;
+    justify-content: end;
+    padding: 50px;
+}
+
+.btnAdmin {
+    height: 30px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}

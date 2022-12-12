@@ -1,22 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import { useState } from "react";
+import Title from './component/Title';
+import Connexion from './component/Connexion';
+import Quizzz from './component/Quizzz';
+import ConnexionAdmin from './component/ConnexionAdmin';
 
 function App() {
+
+  const[isConnected, setConnected] = useState(false);
+  const[name, setName] = useState("");
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ConnexionAdmin isConnected={isConnected}/>
+        <Title name={name} isConnected={isConnected}/>
+        <Connexion isConnected={isConnected} setConnected={setConnected} setName={setName} name={name}/>
+        <Quizzz isConnected={isConnected}/>
       </header>
     </div>
   );
