@@ -1,21 +1,22 @@
 import '../styles/ConnexionAdmin.css';
 import { useState } from 'react';
+import PageAdmin from './PageAdmin';
 
-const ConnexionAdmin = ({ isConnected, isShowing, setShowing }) => {
-    function Show() {
-        setShowing(!isShowing);
-    }
+const ConnexionAdmin = ({ isConnected}) => {
+
+    const [isShowing, setShowing] = useState(false);
 
     return (
         <>
-            {
-                (!isConnected) ?
-                    <div className='btnCA'>
-                        <button className='btnAdmin' onClick={Show}>Connexion Admin</button>
-                    </div>
-                    :
-                    <p></p>
-            }
+        {
+            (!isConnected)?
+            <div className='btnCA'>
+                <button className='btnAdmin' onClick={()=> setShowing(true)}>Connexion Admin</button>
+                <PageAdmin isShowing={isShowing}  onClose={()=>setShowing(false)}/>
+            </div>
+            :
+            <p></p>
+        }
         </>
     )
 }

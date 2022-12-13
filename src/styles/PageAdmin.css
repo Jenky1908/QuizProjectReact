@@ -3,11 +3,18 @@
     font-size: 20px;
     color: white;
     border-radius: 15px;
-    padding: 10px;
+    padding: 50px;
     margin : 15px;
-    height: 200px;
+    height: auto;
     width: 500px;
     margin: auto;
+    position:fixed;
+    top: 30%;
+    left: 33.6%;
+    z-index: 9;
+    animation:fadein 0.7s;
+    box-shadow: 0px 0px 10px 1000px rgb(0, 0, 0, 0.6);
+
 }
 
 .btnCxAdmin {
@@ -17,4 +24,13 @@
 
 .adm {
     margin: 30px;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }

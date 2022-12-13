@@ -1,25 +1,25 @@
 import './styles/App.css';
-import { useState } from "react";
-import Title from './component/Title';
-import Connexion from './component/Connexion';
-import Theme from './component/Theme';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Foot from './pagequiz/Foot';
+import Genshin from './pagequiz/Genshin';
+import HG from './pagequiz/HG';
+import Manga from './pagequiz/Manga';
+import Accueil from './Page/Accueil';
 import ConnexionAdmin from './component/ConnexionAdmin';
-import PageAdmin from './component/PageAdmin';
 
 function App() {
-
-  const[isConnected, setConnected] = useState(false);
-  const[name, setName] = useState("");
-  const [isShowing, setShowing] = useState(false);
-
   return (
     <div className="App">
       <header className="App-header">
-        <ConnexionAdmin isConnected={isConnected} isShowing={isShowing} setShowing={setShowing}/>
-        <PageAdmin isShowing={isShowing}/>
-        <Title name={name} isConnected={isConnected}/>
-        <Theme isConnected={isConnected}/>
-        <Connexion isConnected={isConnected} setConnected={setConnected} setName={setName} name={name}/>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Accueil />}></Route>
+            <Route path="/foot" element={<Foot />}></Route>
+            <Route path="/genshin" element={<Genshin />}></Route>
+            <Route path="/manga" element={<Manga />}></Route>
+            <Route path="/hg" element={<HG />}></Route>
+          </Routes>
+        </BrowserRouter>
       </header>
     </div>
   );

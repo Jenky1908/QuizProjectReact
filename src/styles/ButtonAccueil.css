@@ -1,0 +1,7 @@
+.btnAccueil {
+    height: 50;
+    width: 150px;
+    border-radius: 10px;
+    background-color: lightblue;
+    font-size: 15px;
+}

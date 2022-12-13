@@ -1,24 +1,24 @@
 import '../styles/PageAdmin.css';
 
-const PageAdmin = ({ isShowing }) => {
+const PageAdmin = ({ isShowing, onClose }) => {
+
+    if(!isShowing) return null
+
     return (
         <>
-            {
-                (isShowing) ?
                     <form className='modal'>
+                        <p className="closeBtn" onClick={onClose}>X</p>
                         <div className='adm'>
                             <label className="adminName">Identifiant Admin : </label>
-                            <input/>  
+                            <input/>
                         </div>
                         <div className='adm'>
                             <label className="adminPassword">Mot de passe Admin : </label>
-                            <input type="password"/>  
+                            <input type="password"/>
                         </div>
                         <button className="btnCxAdmin" type="submit">Connecter</button>
                     </form>
-                    :
-                    <p></p>
-            }
+
         </>
     )
 }
