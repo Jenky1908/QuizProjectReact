@@ -1,13 +1,13 @@
 .decx {
-    font-size: xx-large;
-    margin: 50px;
-    background-color: #ff1361;
+    font-size: large;
+    margin: 150px;
+    background-color: white;
     border-radius: 20px;
 }
 
 .conx {
     border-radius: 10px;
-    background-color: rgb(14, 157, 240);
+    border-color: white;
 }
 
 .btnConx {

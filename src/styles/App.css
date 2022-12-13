@@ -1,9 +1,30 @@
 .App {
+  background: linear-gradient(-38deg, purple, teal);
+  background-size: 200% 200%;
+  animation: verticalBreathing 15s ease infinite;
+  overflow: hidden;
   text-align: center;
 }
 
+@keyframes verticalBreathing {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 40% 40%;
+  }
+  50% {
+    background-position: 80% 80%;
+  }
+  75% {
+    background-position: 20% 60%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;

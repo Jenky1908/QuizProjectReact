@@ -1,0 +1,20 @@
+.modal  {
+    background-color: rgb(22, 22, 83);
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin : 15px;
+    height: 200px;
+    width: 500px;
+    margin: auto;
+}
+
+.btnCxAdmin {
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.adm {
+    margin: 30px;
+}

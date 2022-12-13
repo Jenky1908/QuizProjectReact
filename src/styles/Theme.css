@@ -1,0 +1,15 @@
+.menuD {
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    font-size: large;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.btnCommencer {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border-color: white;
+}
