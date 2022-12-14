@@ -2,7 +2,7 @@ import '../styles/Title.css';
 
 const Title = ({ name, isConnected }) => {
     return (
-        <div calssName="container">
+        <div>
             {(isConnected) ?
                 <h1 className="title">Choisis ton thème {name}</h1>
                 :

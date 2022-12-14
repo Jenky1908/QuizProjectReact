@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Quiz from "../component/Quiz";
 
 const Foot = () => 
 {
@@ -7,7 +8,7 @@ const Foot = () =>
     const back = () => navigate("/");
     return (
         <>
-            <p>Ici le quiz de Foot</p>
+            <Quiz/>
             <button onClick={back} className="btnAccueil">Accueil</button>
         </>
     )

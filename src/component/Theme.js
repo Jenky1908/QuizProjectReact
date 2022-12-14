@@ -8,9 +8,6 @@ const Theme = ({ isConnected }) => {
 
     const NavigateQuiz = () => {
         switch (item) {
-            case "0":
-                navigate("/");
-                break;
             case "1":
                 navigate("/foot");
                 break;
@@ -27,7 +24,6 @@ const Theme = ({ isConnected }) => {
                 break;
         }
     }
-
 
     return (
         <>
