@@ -1,20 +1,39 @@
 import React from "react";
 import "../styles/Quiz.css";
 import { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 export default function Quiz() {
     const [quiz, setQuiz] = useState([]);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [showScore, setShowScore] = useState(false);
+    const [counter, setCounter] = useState(10);
+
+    const compter = () => {
+        setTimeout(() => setCounter(counter - 1), 1000);
+    }
+
+    useEffect(() => {
+        compter();
+    }, [counter]);
+
+    if (counter < 0) {
+        if (currentQuestion + 1 < quiz.length) {
+            setCurrentQuestion(currentQuestion + 1);
+        }
+        else {
+            setShowScore(true);
+        }
+        setCounter(10);
+    }
 
     const api_url = 'http://localhost:4000/quiz';
 
-    const getQuiz = async () => 
-    {
-        const {data} = await axios.get(api_url);
-        setQuiz(data);
+    const getQuiz = () => {
+        fetch(api_url)
+            .then(res => res.json())
+            .then(data => setQuiz(data));
     }
 
     useEffect(() => {
@@ -48,6 +67,7 @@ export default function Quiz() {
                         <h1>
                             Question {currentQuestion + 1}/{quiz.length}
                         </h1>
+                        <h2>{counter}</h2>
                         <p>{quiz[currentQuestion].questionText}</p>
                     </section>
 
@@ -58,8 +78,10 @@ export default function Quiz() {
                                     setScore(score + 1);
                                 }
 
+                                setCounter(10);
+
                                 let nextQuestion = currentQuestion + 1;
-                                if (nextQuestion < quiz.length) {
+                                if (currentQuestion + 1 < quiz.length) {
                                     setCurrentQuestion(nextQuestion);
                                 } else {
                                     setShowScore(true);
