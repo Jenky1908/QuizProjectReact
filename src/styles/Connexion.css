@@ -3,21 +3,25 @@
     margin: 150px;
     background-color: white;
     border-radius: 20px;
+    border: none;
 }
 
 .conx {
     border-radius: 10px;
     border-color: white;
+    margin: 10px;
 }
 
 .btnConx {
     width: 150px;
     height: 30px;
     font-size: 20px;
+    border: none;
 }
 
 .bar {
     width: 250px;
-    height: 20px;
+    height: 25px;
     font-size: 20px;
+    border: none;
 }

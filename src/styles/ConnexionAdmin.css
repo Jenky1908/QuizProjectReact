@@ -7,7 +7,15 @@
 .btnAdmin {
     height: 30px;
     width: 150px;
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: transparent;
+    border: white solid 1px;
     border-radius: 20px;
+    transition: box-shadow 0.5s;
+}
+
+.btnAdmin:hover{
+    color: white;
+    -webkit-box-shadow: inset 300px 0 0 0 black;
+    box-shadow: inset 300px 0 0 0 black;
 }

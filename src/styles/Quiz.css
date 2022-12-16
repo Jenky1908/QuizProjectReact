@@ -1,0 +1,48 @@
+.quiz {
+    background-color: rgb(75, 34, 114);
+    border-radius: 30px;
+    height: 530px;
+    width: 700px;
+    margin-bottom: 100px;
+    border: white solid;
+}
+
+.btnReponse {
+    height: 50px;
+    width: 300px;
+    margin: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: white solid 2px;
+    transition: box-shadow 0.5s;
+}
+
+.btnReponse:hover{
+    color: white;
+    -webkit-box-shadow: inset 300px 0 0 0 blueviolet;
+    box-shadow: inset 300px 0 0 0 blueviolet;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.showScore-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
+.btnAccueil {
+    height: 30px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: white;
+    margin-top: 70px;
+    border: none;
+}

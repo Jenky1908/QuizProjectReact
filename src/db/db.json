@@ -1,86 +1,515 @@
 {
-    "quiz": [
+    "foot": [
         {
-            "questionText": "What is the capital of France?",
+            "questionText": "Quel joueur a remporté 5 ballon d'or ?",
             "answerOptions": [
                 {
-                    "answerText": "New York",
+                    "answerText": "Lionnel Messi",
                     "isCorrect": false
                 },
                 {
-                    "answerText": "London",
+                    "answerText": "Ronaldinho",
                     "isCorrect": false
                 },
                 {
-                    "answerText": "Paris",
+                    "answerText": "Cristiano Ronaldo",
                     "isCorrect": true
                 },
                 {
-                    "answerText": "Dublin",
+                    "answerText": "Beckenbauer",
                     "isCorrect": false
                 }
             ]
         },
         {
-            "questionText": "Who is CEO of Tesla?",
-            "answerOptions": [
-                {
-                    "answerText": "Jeff Bezos",
-                    "isCorrect": false
-                },
-                {
-                    "answerText": "Elon Musk",
-                    "isCorrect": true
-                },
-                {
-                    "answerText": "Bill Gates",
-                    "isCorrect": false
-                },
-                {
-                    "answerText": "Tony Stark",
-                    "isCorrect": false
-                }
-            ]
-        },
-        {
-            "questionText": "The iPhone was created by which company?",
-            "answerOptions": [
-                {
-                    "answerText": "Apple",
-                    "isCorrect": true
-                },
-                {
-                    "answerText": "Intel",
-                    "isCorrect": false
-                },
-                {
-                    "answerText": "Amazon",
-                    "isCorrect": false
-                },
-                {
-                    "answerText": "Microsoft",
-                    "isCorrect": false
-                }
-            ]
-        },
-        {
-            "questionText": "How many Harry Potter books are there?",
+            "questionText": "Combien de Coupe du Monde a remporté l'Angleterre ?",
             "answerOptions": [
                 {
                     "answerText": "1",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "2",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "3",
                     "isCorrect": false
                 },
                 {
                     "answerText": "4",
                     "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Quel est la 1er équipe à avoir remporté la Coupe du Monde ?",
+            "answerOptions": [
+                {
+                    "answerText": "Brésil",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Uruguay",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "Allemagne",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Portugal",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Sur quel joueur Zinedine Zidane a-t-il donné un coup de boule ?",
+            "answerOptions": [
+                {
+                    "answerText": "Maserati",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Buffon",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Materazzi",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "Chiellini",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Combien de temps dure une mi-temps au Football ?",
+            "answerOptions": [
+                {
+                    "answerText": "100",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "45",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "50",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "65",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Comment s'appelle le stade du FC Barcelone ?",
+            "answerOptions": [
+                {
+                    "answerText": "Santiago Barnabeu",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Allianz Arena",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Sans Siro",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Camp Nou",
+                    "isCorrect": true
+                }
+            ]
+        }
+    ],
+
+    "genshin": [
+        {
+            "questionText": "Qui est le propriétaire de Domaine de l'Aurore ?",
+            "answerOptions": [
+                {
+                    "answerText": "Diluc",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "Venti",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Jean",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Charles",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Comment s'appelle m'arme d'Hu Tao ?",
+            "answerOptions": [
+                {
+                    "answerText": "Lance de Jade",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Brise Pierre",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Baton de Homa",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "Ails de la voute d'Azur",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "De quel type est Arataki Itto ?",
+            "answerOptions": [
+                {
+                    "answerText": "Géo",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "Cryo",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Dendro",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Pyro",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Qui est Al-Haitam pour l'Académie de Sumeru ?",
+            "answerOptions": [
+                {
+                    "answerText": "Le roi",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Le scribe",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "L'homme de ménage",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Un esclave",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Comment se rend-on à Inazuma la 1er fois ?",
+            "answerOptions": [
+                {
+                    "answerText": "En bateau",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "En Avion",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "A la nage",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Sur le dos d'un géosaure antique",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Quel est le rang de l'Excécuteur Fatui : La Signora ?",
+            "answerOptions": [
+                {
+                    "answerText": "9",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "10",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "8",
+                    "isCorrect": true
                 },
                 {
                     "answerText": "6",
                     "isCorrect": false
+                }
+            ]
+        }
+    ],
+
+    "manga": [
+        {
+            "questionText": "Comment s'appelle le Zanpakuto d'Ichigo ?",
+            "answerOptions": [
+                {
+                    "answerText": "Zangetsu",
+                    "isCorrect": true
                 },
                 {
-                    "answerText": "7",
+                    "answerText": "Zanpecto",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Zangenjutsu",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "XAML",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Qui est le 1er personnage à entrer dans la zone ?",
+            "answerOptions": [
+                {
+                    "answerText": "Kuroko",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Aomine",
                     "isCorrect": true
+                },
+                {
+                    "answerText": "Akashi",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Kagami",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Comment s'appelle le roi des fourmis Chimères ?",
+            "answerOptions": [
+                {
+                    "answerText": "Nétéro",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Neferpito",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Meruem",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "Kaito",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Qui est le juge des âmes défunts dans DBZ ?",
+            "answerOptions": [
+                {
+                    "answerText": "Zeno",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Kaio",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Tout Puissant",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Le roi Enma",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "questionText": "Quel est le nom du village caché de la pluie ?",
+            "answerOptions": [
+                {
+                    "answerText": "Ame",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "Suna",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Konohamaru",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Rock Lee",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Quel est le nom japonais du Kaléidoscope hypnotique ?",
+            "answerOptions": [
+                {
+                    "answerText": "Tsukuyomi Sharingan",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Mangekyu Sharingan",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "Amaterasu Sharingan",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "LGBT Sharingan",
+                    "isCorrect": true
+                }
+            ]
+        }
+    ],
+
+    "hg": [
+        {
+            "questionText": "Qui est le 1er roi de France ?",
+            "answerOptions": [
+                {
+                    "answerText": "François 1er",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Raphaël 1er",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Philippe 1er",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Clovis",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "questionText": "Quel est l'ancien nom du la Russie ?",
+            "answerOptions": [
+                {
+                    "answerText": "Eissur",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "KGB",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "URSS",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "USA",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Technique pour brûler la terre afin de la rendre plus fertile ?",
+            "answerOptions": [
+                {
+                    "answerText": "Pyromancie",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Brûlage",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Brûli",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "Broly",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "Comment s'appelle le phénomène qui a permis l'adoption des voitures pour tous ?",
+            "answerOptions": [
+                {
+                    "answerText": "Le Taylorisme",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Le Fordisme",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "Le Lamborghinisme",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Teslisme",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "questionText": "A quel date est tombé le Mur de Berlin ?",
+            "answerOptions": [
+                {
+                    "answerText": "3 Janvier 1914",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "27 Mars 1945",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "19 Aout 2020",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "9 Novembre 1989",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "questionText": "Quel est la capital du Republique Tchèque ?",
+            "answerOptions": [
+                {
+                    "answerText": "Prague",
+                    "isCorrect": true
+                },
+                {
+                    "answerText": "Lisbonne",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Kiev",
+                    "isCorrect": false
+                },
+                {
+                    "answerText": "Bratislava",
+                    "isCorrect": false
                 }
             ]
         }

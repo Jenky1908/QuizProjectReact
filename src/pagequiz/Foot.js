@@ -8,8 +8,8 @@ const Foot = () =>
     const back = () => navigate("/");
     return (
         <>
-            <Quiz/>
             <button onClick={back} className="btnAccueil">Accueil</button>
+            <Quiz path="foot"/>
         </>
     )
 }

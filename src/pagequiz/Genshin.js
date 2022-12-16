@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Quiz from "../component/Quiz";
 
 const Genshin = () => 
 {
@@ -7,8 +8,8 @@ const Genshin = () =>
     const back = () => navigate("/");
     return (
         <>
-            <p>Ici le quiz de Genshin</p>
             <button onClick={back} className="btnAccueil">Accueil</button>
+            <Quiz path="genshin"/>
         </>
     )
 }

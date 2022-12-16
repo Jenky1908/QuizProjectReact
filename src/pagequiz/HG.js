@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Quiz from "../component/Quiz";
 
 const HG = () => 
 {
@@ -7,8 +8,8 @@ const HG = () =>
     const back = () => navigate("/");
     return (
         <>
-            <p>Ici le quiz d'Histoire-Géo</p>
             <button onClick={back} className="btnAccueil">Accueil</button>
+            <Quiz path="hg"/>
         </>
     )
 }
