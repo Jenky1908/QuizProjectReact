@@ -9,7 +9,7 @@ const Foot = () =>
     return (
         <>
             <button onClick={back} className="btnAccueil">Accueil</button>
-            <Quiz path="foot"/>
+            <Quiz path="foot/"/>
         </>
     )
 }

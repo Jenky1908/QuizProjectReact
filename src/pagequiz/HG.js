@@ -9,7 +9,7 @@ const HG = () =>
     return (
         <>
             <button onClick={back} className="btnAccueil">Accueil</button>
-            <Quiz path="hg"/>
+            <Quiz path="hg/"/>
         </>
     )
 }

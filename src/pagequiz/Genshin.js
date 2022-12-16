@@ -9,7 +9,7 @@ const Genshin = () =>
     return (
         <>
             <button onClick={back} className="btnAccueil">Accueil</button>
-            <Quiz path="genshin"/>
+            <Quiz path="genshin/"/>
         </>
     )
 }

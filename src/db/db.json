@@ -1,6 +1,7 @@
 {
     "foot": [
         {
+            "id" : 1,
             "questionText": "Quel joueur a remporté 5 ballon d'or ?",
             "answerOptions": [
                 {
@@ -22,6 +23,7 @@
             ]
         },
         {
+            "id" : 2,
             "questionText": "Combien de Coupe du Monde a remporté l'Angleterre ?",
             "answerOptions": [
                 {
@@ -43,6 +45,7 @@
             ]
         },
         {
+            "id" : 3,
             "questionText": "Quel est la 1er équipe à avoir remporté la Coupe du Monde ?",
             "answerOptions": [
                 {
@@ -64,6 +67,7 @@
             ]
         },
         {
+            "id" : 4,
             "questionText": "Sur quel joueur Zinedine Zidane a-t-il donné un coup de boule ?",
             "answerOptions": [
                 {
@@ -85,6 +89,7 @@
             ]
         },
         {
+            "id" : 5,
             "questionText": "Combien de temps dure une mi-temps au Football ?",
             "answerOptions": [
                 {
@@ -106,6 +111,7 @@
             ]
         },
         {
+            "id" : 6,
             "questionText": "Comment s'appelle le stade du FC Barcelone ?",
             "answerOptions": [
                 {
@@ -130,6 +136,7 @@
 
     "genshin": [
         {
+            "id" : 1,
             "questionText": "Qui est le propriétaire de Domaine de l'Aurore ?",
             "answerOptions": [
                 {
@@ -151,6 +158,7 @@
             ]
         },
         {
+            "id" : 2,
             "questionText": "Comment s'appelle m'arme d'Hu Tao ?",
             "answerOptions": [
                 {
@@ -172,6 +180,7 @@
             ]
         },
         {
+            "id" : 3,
             "questionText": "De quel type est Arataki Itto ?",
             "answerOptions": [
                 {
@@ -193,6 +202,7 @@
             ]
         },
         {
+            "id" : 4,
             "questionText": "Qui est Al-Haitam pour l'Académie de Sumeru ?",
             "answerOptions": [
                 {
@@ -214,6 +224,7 @@
             ]
         },
         {
+            "id" : 5,
             "questionText": "Comment se rend-on à Inazuma la 1er fois ?",
             "answerOptions": [
                 {
@@ -235,6 +246,7 @@
             ]
         },
         {
+            "id" : 6,
             "questionText": "Quel est le rang de l'Excécuteur Fatui : La Signora ?",
             "answerOptions": [
                 {
@@ -259,6 +271,7 @@
 
     "manga": [
         {
+            "id" : 1,
             "questionText": "Comment s'appelle le Zanpakuto d'Ichigo ?",
             "answerOptions": [
                 {
@@ -280,6 +293,7 @@
             ]
         },
         {
+            "id" : 2,
             "questionText": "Qui est le 1er personnage à entrer dans la zone ?",
             "answerOptions": [
                 {
@@ -301,6 +315,7 @@
             ]
         },
         {
+            "id" : 3,
             "questionText": "Comment s'appelle le roi des fourmis Chimères ?",
             "answerOptions": [
                 {
@@ -322,6 +337,7 @@
             ]
         },
         {
+            "id" : 4,
             "questionText": "Qui est le juge des âmes défunts dans DBZ ?",
             "answerOptions": [
                 {
@@ -343,6 +359,7 @@
             ]
         },
         {
+            "id" : 5,
             "questionText": "Quel est le nom du village caché de la pluie ?",
             "answerOptions": [
                 {
@@ -364,6 +381,7 @@
             ]
         },
         {
+            "id" : 6,
             "questionText": "Quel est le nom japonais du Kaléidoscope hypnotique ?",
             "answerOptions": [
                 {
@@ -388,6 +406,7 @@
 
     "hg": [
         {
+            "id" : 1,
             "questionText": "Qui est le 1er roi de France ?",
             "answerOptions": [
                 {
@@ -409,6 +428,7 @@
             ]
         },
         {
+            "id" : 2,
             "questionText": "Quel est l'ancien nom du la Russie ?",
             "answerOptions": [
                 {
@@ -430,6 +450,7 @@
             ]
         },
         {
+            "id" : 3,
             "questionText": "Technique pour brûler la terre afin de la rendre plus fertile ?",
             "answerOptions": [
                 {
@@ -451,6 +472,7 @@
             ]
         },
         {
+            "id" : 4,
             "questionText": "Comment s'appelle le phénomène qui a permis l'adoption des voitures pour tous ?",
             "answerOptions": [
                 {
@@ -472,6 +494,7 @@
             ]
         },
         {
+            "id" : 5,
             "questionText": "A quel date est tombé le Mur de Berlin ?",
             "answerOptions": [
                 {
@@ -493,6 +516,7 @@
             ]
         },
         {
+            "id" : 6,
             "questionText": "Quel est la capital du Republique Tchèque ?",
             "answerOptions": [
                 {

@@ -2,12 +2,12 @@ import React, { useRef } from "react";
 import "../styles/Quiz.css";
 import { useEffect, useState } from "react";
 import Confettis from "./Confettis";
-// import axios from "axios";
+import axios from "axios";
 
 export default function Quiz({ path }) {
 
-    const [quiz, setQuiz] = useState([]);
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [quiz, setQuiz] = useState({});
+    const [id, setId] = useState(1);
     const [score, setScore] = useState(0);
     const [showScore, setShowScore] = useState(false);
     const [counter, setCounter] = useState(0);
@@ -16,34 +16,34 @@ export default function Quiz({ path }) {
     let api_url = 'http://localhost:4002/';
 
     switch (path) {
-        case "foot":
+        case "foot/":
             api_url += path;
             break;
-        case "genshin":
+        case "genshin/":
             api_url += path;
             break;
-        case "hg":
+        case "hg/":
             api_url += path;
             break;
-        case "manga":
+        case "manga/":
             api_url += path;
             break;
         default:
             break;
     }
 
-    const getQuiz = () => {
-        fetch(api_url)
-            .then(res => res.json())
-            .then(data => setQuiz(data));
+    const getQuiz = async () => {
+        // data (propriété d'axios) est la réponse en json
+        const { data } = await axios.get(api_url + id);
+        setQuiz(data);
     }
 
     useEffect(() => {
         getQuiz();
-    }, []);
+    }, [id]);
 
     const compter = () => {
-        setCounter(counter => counter - 1);
+        setCounter(counter => counter);
     }
 
     const clearCounter = () => {
@@ -58,8 +58,8 @@ export default function Quiz({ path }) {
     }, []);
 
     if (counter < 0) {
-        if (currentQuestion + 1 < quiz.length) {
-            setCurrentQuestion(currentQuestion + 1);
+        if (id < 6) {
+            setId(id+1)
         }
         else {
             setShowScore(true);
@@ -74,7 +74,7 @@ export default function Quiz({ path }) {
     let phrase;
 
     switch (score) {
-        case quiz.length - quiz.length:
+        case 0:
             phrase = "... Vas là bas !";
             nbConf = 10;
             emoji = <p>&#128169;</p>;
@@ -85,7 +85,7 @@ export default function Quiz({ path }) {
             nbConf = 50;
             emoji = <p>&#x1F480;</p>;
             break;
-        case quiz.length / 2:
+        case 3:
             phrase = "Tu fais partie de la moyenne";
             nbConf = 200;
             emoji = <p>&#x1F610;</p>;
@@ -96,12 +96,15 @@ export default function Quiz({ path }) {
             nbConf = 700;
             emoji = <p>&#x1F409;</p>
             break;
-        case quiz.length:
+        case 6:
             phrase = "Le seul qui puisse me battre, c'est moi-même !";
             nbConf = 2000;
             emoji = <p>&#x1F3C6;</p>
             break;
     }
+
+    console.log(quiz);
+    console.log(api_url + id);
 
     return (
         <div className="app">
@@ -109,7 +112,7 @@ export default function Quiz({ path }) {
                 <section className="showScore-section">
                     <div className="emoji">{emoji}</div>
                     <Confettis nbConfetti={nbConf}/>
-                    Ton score est : {score}/{quiz.length}
+                    Ton score est : {score}/6
                     <div className="phrase">
                         {phrase}
                     </div>
@@ -122,12 +125,12 @@ export default function Quiz({ path }) {
                             :
                             <div>
                                 <h1>
-                                    Question {currentQuestion + 1}/{quiz.length}
+                                    Question {id}/6
                                 </h1>
                                 <h2>{counter}</h2>
-                                <p>{quiz[currentQuestion].questionText}</p>
+                                <p>{quiz.questionText}</p>
                                 <div>
-                                    {quiz[currentQuestion].answerOptions.map(item => (
+                                    {quiz.answerOptions.map(item => (
                                         <button className="btnReponse" Key={x++} onClick={() => {
                                             if (item.isCorrect) {
                                                 setScore(score + 1);
@@ -135,9 +138,9 @@ export default function Quiz({ path }) {
 
                                             clearCounter();
 
-                                            let nextQuestion = currentQuestion + 1;
-                                            if (currentQuestion + 1 < quiz.length) {
-                                                setCurrentQuestion(nextQuestion);
+                                            let nextQuestion = id + 1;
+                                            if (nextQuestion <= 6) {
+                                                setId(id+1);
                                             } else {
                                                 setShowScore(true);
                                             }

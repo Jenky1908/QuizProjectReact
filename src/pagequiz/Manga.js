@@ -9,7 +9,7 @@ const Manga = () =>
     return (
         <>
             <button onClick={back} className="btnAccueil">Accueil</button>
-            <Quiz path="manga"/>
+            <Quiz path="manga/"/>
         </>
     )
 }
