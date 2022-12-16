@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "../styles/Quiz.css";
 import { useEffect, useState } from "react";
+import Confettis from "./Confettis";
 // import axios from "axios";
 
 export default function Quiz({ path }) {
@@ -10,8 +11,6 @@ export default function Quiz({ path }) {
     const [score, setScore] = useState(0);
     const [showScore, setShowScore] = useState(false);
     const [counter, setCounter] = useState(0);
-    const [arrayTrue, setArrayTrue] = useState([]);
-    const [i, setI] = useState(0);
     const ref = useRef(null);
 
     let api_url = 'http://localhost:4002/';
@@ -33,8 +32,6 @@ export default function Quiz({ path }) {
             break;
     }
 
-    console.log(path, api_url);
-
     const getQuiz = () => {
         fetch(api_url)
             .then(res => res.json())
@@ -50,7 +47,7 @@ export default function Quiz({ path }) {
     }
 
     const clearCounter = () => {
-        setCounter(10);
+        setCounter(15);
         if (ref.current) clearInterval(ref.current);
         const id = setInterval(() => { compter() }, 1000);
         ref.current = id;
@@ -71,14 +68,50 @@ export default function Quiz({ path }) {
     }
 
     let x = 1;
+    let nbConf = 1;
+    let emoji;
+
+    let phrase;
+
+    switch (score) {
+        case quiz.length - quiz.length:
+            phrase = "... Vas là bas !";
+            nbConf = 10;
+            emoji = <p>&#128169;</p>;
+            break;
+        case 1:
+        case 2:
+            phrase = "L'importance c'est de participer... (phrase de perdant)";
+            nbConf = 50;
+            emoji = <p>&#x1F480;</p>;
+            break;
+        case quiz.length / 2:
+            phrase = "Tu fais partie de la moyenne";
+            nbConf = 200;
+            emoji = <p>&#x1F610;</p>;
+            break;
+        case 4:
+        case 5:
+            phrase = "Tu maitrises le quiz ! :p";
+            nbConf = 700;
+            emoji = <p>&#x1F409;</p>
+            break;
+        case quiz.length:
+            phrase = "Le seul qui puisse me battre, c'est moi-même !";
+            nbConf = 2000;
+            emoji = <p>&#x1F3C6;</p>
+            break;
+    }
 
     return (
         <div className="app">
             {(showScore) ? (
                 <section className="showScore-section">
-                    Your score is {score}/{quiz.length}
-                    <div>
-                        {arrayTrue}
+                    <div className="emoji">{emoji}</div>
+                    <Confettis nbConfetti={nbConf}/>
+                    Ton score est : {score}/{quiz.length}
+                    <div className="phrase">
+                        {phrase}
                     </div>
                 </section>
             ) : (
@@ -100,9 +133,6 @@ export default function Quiz({ path }) {
                                                 setScore(score + 1);
                                             }
 
-                                            setArrayTrue(arrayTrue[i] = item.answerText);
-                                            setI(i+1);
-                                            console.log(item.answerText);
                                             clearCounter();
 
                                             let nextQuestion = currentQuestion + 1;

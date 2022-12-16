@@ -5,7 +5,6 @@ import Genshin from './pagequiz/Genshin';
 import HG from './pagequiz/HG';
 import Manga from './pagequiz/Manga';
 import Accueil from './Page/Accueil';
-import ConnexionAdmin from './component/ConnexionAdmin';
 
 function App() {
   return (

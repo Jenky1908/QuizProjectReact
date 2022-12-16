@@ -4,6 +4,7 @@ import PageAdmin from "../component/PageAdmin";
 import Title from "../component/Title";
 import Theme from "../component/Theme";
 import { useState } from "react";
+import Foot from "../pagequiz/Foot";
 
 const Accueil = () => {
 
